@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Pokemon from './Pokemon';
+import '../App.css';
 
 export default class Pokedex extends Component {
   render() {
@@ -8,8 +9,8 @@ export default class Pokedex extends Component {
 
     return (
       <>
-        <h1>Pokédex</h1>
-        <ul>
+        <h1 className="title">Pokédex</h1>
+        <ul className="list">
           { pokemonList.map((pokemon) => (
             <Pokemon key={ pokemon.id } pokemon={ pokemon } />
           ))}

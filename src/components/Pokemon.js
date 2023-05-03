@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import '../App.css';
 
 export default class Pokemon extends Component {
   render() {
@@ -8,11 +9,11 @@ export default class Pokemon extends Component {
     } = this.props;
 
     return (
-      <li>
-        <h4>{ name }</h4>
-        <h4>{ type }</h4>
-        <h4>{ `${value} ${measurementUnit}` }</h4>
+      <li className="li">
+        <h4 className="name font">{ name }</h4>
         <img src={ image } alt={ name } />
+        <h4 className="font">{ `${value} ${measurementUnit}` }</h4>
+        <h4 className="font">{ type }</h4>
       </li>
     );
   }

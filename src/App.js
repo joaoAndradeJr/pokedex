@@ -6,7 +6,9 @@ import './App.css';
 class App extends React.Component {
   render() {
     return (
-      <Pokedex pokemonList={ pokemonList } />
+      <main className="main-container">
+        <Pokedex pokemonList={ pokemonList } />
+      </main>
     );
   }
 }
